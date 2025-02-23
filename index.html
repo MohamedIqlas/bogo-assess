@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's Bogo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="bogo-container">
+        <div class="bogo-head">
+            <div class="line"></div>
+            <h3>YAY! It's BOGO</h3>
+            <div class="line"></div>
+        </div>
+
+        <div class="bogo-option most-popular">
+            <div class="bogo-flex">    
+                <input type="radio" name="bogo" id="bogo1" data-price="10" value="1"  onclick="updateBogo(1)">
+                <label for="bogo1">
+                    <div class="bogo-info">
+                        <p> <b>1 Unit</b> <span class="discount">10% Off</span> <br> <span style="font-size: 14px;">Standart Price</span> </p>
+                        <p class="price">$10.00 USD <br> <span class="old-price">$24.00 USD</span></p>
+                    </div>
+                </label>
+            </div>
+            
+            <div id="bogo1-details" class="bogo-details">
+                <p><span>Size</span><span>Colour</span></p>
+                <div class="size-color">
+                    <label><span class="size-no">#1</span> 
+                        <select style="margin-left: 2px;">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option>Black</option>
+                            <option>Blue</option>
+                            <option>Red</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="size-color">
+                    <label><span class="size-no">#2</span> 
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option>Red</option>
+                            <option>Black</option>
+                            <option>Blue</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="bogo-option">
+            <h4 class="popular">MOST POPULAR</h4>
+            <div class="bogo-flex">
+                <input type="radio" name="bogo" id="bogo2" data-price="18" value="2" onclick="updateBogo(2)">
+                <label for="bogo2">
+                    <div class="bogo-info">
+                        <p> <b>2 Unit</b> <span class="discount">20% Off</span></p>
+                        <p class="price">$18.00 USD <br> <span class="old-price">$24.00 USD</span></p>
+                    </div>
+                </label>
+            </div>
+
+            <div id="bogo2-details" class="bogo-details">
+                <p><span>Size</span><span>Colour</span></p>
+                <div class="size-color">
+                    <label><span class="size-no">#1</span> 
+                        <select style="margin-left: 2px;">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option>Black</option>
+                            <option>Blue</option>
+                            <option>Red</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="size-color">
+                    <label><span class="size-no">#2</span>
+                        <select>
+                            <p>size</p>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option>Red</option>
+                            <option>Black</option>
+                            <option>Blue</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="bogo-option most-popular">
+            <div class="bogo-flex">
+                <input type="radio" name="bogo" id="bogo3" data-price="24" value="3" onclick="updateBogo(3)">
+                <label for="bogo3">
+                    <div class="bogo-info">
+                        <p> <b>3 Unit</b> <span class="discount">30% Off</span></p>
+                        <p class="price">$24.00 USD <br> <span class="old-price">$24.00 USD</span></p>
+                    </div>
+                </label>
+            </div>
+
+            <div id="bogo3-details" class="bogo-details">
+                <p><span>Size</span><span>Colour</span></p>
+                <div class="size-color">
+                    <label><span class="size-no">#1</span> 
+                        <select style="margin-left: 2px;">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option>Black</option>
+                            <option>Blue</option>
+                            <option>Red</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="size-color">
+                    <label><span class="size-no">#2</span> 
+                        <select>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select>
+                            <option>Red</option>
+                            <option>Black</option>
+                            <option>Blue</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="total-ship">
+            <p class="shipping-info">Free Delivery</p>
+            <p class="total-price">Total: <span id="total">$0.00 USD</span></p>
+        </div>
+        <button class="add-to-cart">+ Add to Cart</button>
+        <p class="powered">@ Powered by Pumper</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
